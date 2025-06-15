@@ -1,0 +1,176 @@
+/* =============== INHOUDSOPGAVE =============== */
+/* ----- BIG NEWS ----- */
+/* ----- SHORTS ----- */
+/* ----- NEW OVERVIEW ----- */
+/* =============== END INHOUDSOPGAVE =============== */
+/* ----- BIG NEWS ----- */
+.big-news-container {
+  display: flex;
+  gap: 0;
+}
+.big-news-container article.big-news-article {
+  position: relative;
+  display: block;
+  flex: 0 1 25%;
+}
+.big-news-container article.big-news-article a {
+  position: relative;
+}
+.big-news-container article.big-news-article a figure {
+  background-color: #26407F;
+  position: relative;
+  padding-top: 150%;
+  overflow: hidden;
+}
+.big-news-container article.big-news-article a figure img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  opacity: 0.69;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.big-news-container article.big-news-article a figcaption {
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  position: absolute;
+  text-align: center;
+  padding-bottom: 3.25rem;
+  color: #fff;
+  margin: auto;
+  bottom: 35%;
+  width: 85%;
+  right: 0;
+  left: 0;
+}
+.big-news-container article.big-news-article a figcaption b {
+  font-size: 1.5625rem;
+}
+.big-news-container article.big-news-article a figcaption span {
+  background-color: #26407F;
+  position: absolute;
+  font-size: 0.9rem;
+  max-width: 100px;
+  padding: 5px 0;
+  display: block;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.big-news-container article.big-news-article:hover figure img {
+  opacity: 1;
+}
+.big-news-container article.big-news-article:hover figcaption {
+  opacity: 0;
+}
+
+/* ----- END BIG NEWS ----- */
+/* ----- SHORTS ----- */
+.shorts-container {
+  margin-top: 1.875rem;
+  gap: 2.1428571429%;
+  display: flex;
+}
+.shorts-container article.short-article {
+  flex: 0 1 23.3928571429%;
+}
+.shorts-container article.short-article a {
+  text-decoration: none;
+  color: #fff;
+}
+.shorts-container article.short-article a figure {
+  background-color: #26407F;
+  margin-bottom: 0.925rem;
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+.shorts-container article.short-article a figure img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.shorts-container article.short-article a figcaption b {
+  margin-bottom: 0.325rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: block;
+}
+.shorts-container article.short-article a figcaption p {
+  letter-spacing: -0.5px;
+}
+
+/* ----- END SHORTS ----- */
+/* ----- NEW OVERVIEW ----- */
+.news-overview {
+  border-bottom: 1px solid #fff;
+  position: relative;
+  display: block;
+}
+.news-overview article.news-article {
+  border-top: 1px solid #fff;
+  position: relative;
+  padding: 1rem 0;
+}
+.news-overview article.news-article a {
+  text-decoration: none;
+  gap: 2.8571428571%;
+  display: flex;
+  color: #fff;
+}
+.news-overview article.news-article a figure {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 36%;
+}
+.news-overview article.news-article a figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.news-overview article.news-article a figcaption {
+  margin: auto;
+  width: 100%;
+}
+.news-overview article.news-article a figcaption b {
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+}
+.news-overview article.news-article a figcaption p {
+  letter-spacing: 0.5px;
+  margin-top: 0.625rem;
+  font-weight: 300;
+  display: block;
+}
+.news-overview article.news-article:hover figure img {
+  transform: scale(1.1);
+}
+.news-overview article.news-article:hover figcaption b {
+  text-decoration: underline;
+}
+
+/* ----- END NEW OVERVIEW ----- *//*# sourceMappingURL=home.css.map */

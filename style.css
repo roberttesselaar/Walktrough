@@ -1,0 +1,88 @@
+* {
+  transition: 0.6s;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #202634;
+  color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+/* ----- HEADER ----- */
+header#header {
+  background-color: #283044;
+  padding: 10px 0;
+}
+header#header .header-inner {
+  max-width: 1400px;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+header#header .header-inner a.header-logo {
+  height: 60px;
+  width: 60px;
+}
+header#header .header-inner a.header-logo:hover svg {
+  transform: rotate(180deg);
+}
+header#header .header-inner .menu-container {
+  margin: auto;
+  width: 100%;
+}
+header#header .header-inner .menu-container ul#menu-primary-menu {
+  justify-content: right;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  gap: 30px;
+}
+header#header .header-inner .menu-container ul#menu-primary-menu li {
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+}
+header#header .header-inner .menu-container ul#menu-primary-menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+header#header .header-inner .menu-container ul#menu-primary-menu li:hover a {
+  color: #26407F;
+}
+
+/* ----- END HEADER ----- */
+.container {
+  position: relative;
+  padding: 5rem 0;
+}
+.container .row {
+  max-width: 1400px;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+.container:nth-child(odd) {
+  background-color: #283044;
+}
+.container .rows {
+  gap: 2.1428571429%;
+  max-width: 1400px;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.container .rows .column-3-2 {
+  flex: 0 1 66.6666%;
+}
+.container .rows .column-3-1 {
+  flex: 0 1 33.3333%;
+}/*# sourceMappingURL=style.css.map */
