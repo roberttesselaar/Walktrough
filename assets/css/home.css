@@ -104,14 +104,21 @@
   top: 0;
 }
 .shorts-container article.short-article a figcaption b {
-  margin-bottom: 0.325rem;
+  text-transform: uppercase;
   letter-spacing: -0.5px;
-  font-weight: 700;
+  line-height: 1.25rem;
   font-size: 1.25rem;
+  font-weight: 700;
   display: block;
 }
 .shorts-container article.short-article a figcaption p {
   letter-spacing: -0.5px;
+  margin-top: 0.625rem;
+  font-size: 0.925rem;
+  display: block;
+}
+.shorts-container article.short-article:hover figure img {
+  transform: scale(1.2);
 }
 
 /* ----- END SHORTS ----- */
@@ -173,4 +180,33 @@
   text-decoration: underline;
 }
 
-/* ----- END NEW OVERVIEW ----- *//*# sourceMappingURL=home.css.map */
+/* ----- END NEW OVERVIEW ----- */
+.release-of-the-week section {
+  display: flex;
+  gap: 5%;
+}
+.release-of-the-week section figure {
+  width: 25%;
+}
+.release-of-the-week section figure div {
+  padding-top: 100%;
+  position: relative;
+  display: block;
+}
+.release-of-the-week section figure div img {
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.release-of-the-week section figcaption p {
+  font-size: 0.825rem;
+}/*# sourceMappingURL=home.css.map */

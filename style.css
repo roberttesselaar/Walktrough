@@ -16,6 +16,11 @@ h2 {
   font-weight: 900;
 }
 
+h3 {
+  margin-bottom: 1.875rem;
+  display: block;
+}
+
 /* ----- HEADER ----- */
 header#header {
   background-color: #283044;
@@ -59,9 +64,60 @@ header#header .header-inner .menu-container ul#menu-primary-menu li:hover a {
 }
 
 /* ----- END HEADER ----- */
+/* ----- SIDEBAR ----- */
+aside#sidebar {
+  box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 1.875rem 1.875rem 6.875rem 1.875rem;
+  background-color: #283044;
+  overflow: auto;
+  position: fixed;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 300px;
+}
+aside#sidebar header {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.69);
+}
+aside#sidebar header svg {
+  margin-bottom: 1.875rem;
+}
+aside#sidebar header h3 {
+  opacity: 0.69;
+}
+aside#sidebar h4 {
+  text-transform: uppercase;
+  margin: 1.875rem 0 0.625rem;
+  font-size: 0.825rem;
+  text-align: center;
+}
+aside#sidebar ul.article-list {
+  overflow-y: auto;
+  list-style: none;
+}
+aside#sidebar ul.article-list li {
+  margin-bottom: 0.325rem;
+  letter-spacing: -0.5px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  padding: 0.325rem;
+  cursor: pointer;
+}
+aside#sidebar ul.article-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+aside#sidebar ul.article-list li:hover, aside#sidebar ul.article-list li .current {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ----- END SIDEBAR ----- */
+/* ----- CONTAINER | ROW ----- */
 .container {
   position: relative;
   padding: 5rem 0;
+}
+.container:nth-child(odd) {
+  background-color: #283044;
 }
 .container .row {
   max-width: 1400px;
@@ -70,11 +126,8 @@ header#header .header-inner .menu-container ul#menu-primary-menu li:hover a {
   margin: auto;
   width: 80%;
 }
-.container:nth-child(odd) {
-  background-color: #283044;
-}
 .container .rows {
-  gap: 2.1428571429%;
+  gap: 7.1428571429%;
   max-width: 1400px;
   display: flex;
   margin: auto;
@@ -85,4 +138,96 @@ header#header .header-inner .menu-container ul#menu-primary-menu li:hover a {
 }
 .container .rows .column-3-1 {
   flex: 0 1 33.3333%;
+}
+.container .rows .column-4-1 {
+  flex: 0 1 25%;
+}
+.container .rows .column-4-2 {
+  flex: 0 1 50%;
+}
+.container .rows .column-4-3 {
+  flex: 0 1 75%;
+}
+.container .rows .column-4-4 {
+  flex: 0 1 100%;
+}
+
+/* ----- END CONTAINER | ROW ----- */
+.article-overview {
+  gap: 2.1428571429%;
+  flex-wrap: Wrap;
+  display: flex;
+}
+.article-overview article {
+  background-color: #283044;
+  flex: 0 1 31.9047619048%;
+  margin-bottom: 1.875rem;
+}
+.article-overview article a {
+  text-decoration: none;
+  color: #fff;
+}
+.article-overview article a figure {
+  padding-top: 56.25%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.article-overview article a figure img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.article-overview article a figcaption {
+  padding: 0.925rem;
+}
+.article-overview article a figcaption b {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: -0.5px;
+}
+.article-overview article a figcaption i {
+  text-transform: uppercase;
+  margin-top: 0.325rem;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #be1622;
+  display: block;
+}
+.article-overview article:hover {
+  background-color: #333333;
+}
+.article-overview article:hover figure img {
+  transform: scale(1.2);
+}
+
+.pagination {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.pagination .current {
+  text-decoration: none;
+  color: #be1622;
+  font-weight: 600;
+}
+.pagination a {
+  color: #fff;
+}
+
+form {
+  width: 100%;
+}
+form select {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

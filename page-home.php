@@ -50,9 +50,8 @@
         <div class="shorts-container">
             <?php
                 $args = array(
-                    'post_type' => 'post',
+                    'post_type' => 'short',
                     'posts_per_page' => 4,
-                    'category_name' => 'big-news'
                 );
                 $the_query = new WP_Query($args);
                     if ( $the_query->have_posts() ) :
@@ -68,7 +67,7 @@
                         <figcaption>
                             <b><?php echo the_title(); ?></b>
                             <p>
-                                <?php if(!empty(get_the_excerpt())) {echo get_the_excerpt(); } ?>
+                                <?php if(!empty(get_the_excerpt())) {echo wp_trim_words( get_the_excerpt(), 14, ' ...' ); } ?>
                             </p>
                         </figcaption>
                     </a>
@@ -136,7 +135,26 @@
         </div>
 
         <div class="column-3-1">
-                Column 3-1
+            <h3>Release of the week</h3>
+            <div class="release-of-the-week">
+                <section>
+                    <figure>
+                        <div>
+                            <img src="/wp-content/themes/walktrough/assets/img/P5X_promo.webp">
+                        </div>
+                    </figure>
+                    <figcaption>
+                        <b>Persona 5: The Phantom X</b>
+                        <p>morgen verkrijgbaar</p>
+
+                        <ul>
+
+                        </ul>
+                    </figcaption>
+                </section>
+
+
+            </div>
         </div>
 
     </div>
